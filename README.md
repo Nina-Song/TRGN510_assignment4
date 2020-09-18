@@ -14,7 +14,7 @@
   wget http://ftp.ensembl.org/pub/release-75/gtf/homo_sapiens/Homo_sapiens.GRCh37.75.gtf.gz
   ```
   and unzip the `.gz` file to the path of where the program is located by `gunzip Homo_sapiens.GRCh37.75.gtf.gz`
-  * This program also provides the Unit Test file `expres.anal.csv` which can be reached by following:
+  * This program also provides the Unit Test file `expression_analysis.csv` which can be reached by following:
   ```
   git clone https://github.com/davcraig75/unit
   ```
@@ -22,7 +22,7 @@
 ## Usage
   * Run the script on the Unit Test file and create a file with the `ENSG` name converted to `HUGO` name by 
   ```
-  ./ensg2hugo.py -f2 expres.anal.csv > expres.HUGO.anal.csv
+  ./ensg2hugo.py -f2 expression_analysis.csv > expression_analysis.hugo.csv
   ```
    where `-f2` would pick the 2nd column in the `expres.anal.csv`.
   * This program allow an option `-f [0-9]` to select the column which contains the `ENSG` name originally. If there is no `-f` then the first column is used.
